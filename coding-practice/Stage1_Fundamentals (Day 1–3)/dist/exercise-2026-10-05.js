@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function rangeCategorization(numbers) {
     let result = [];
     for (let num of numbers) {
@@ -205,4 +204,20 @@ function basicWordCounter(text) {
     return result;
 }
 console.log(basicWordCounter("This is a test. This test is simple!"));
-//# sourceMappingURL=exercise-2026-10-05.js.map
+function splitNprint(text) {
+    return text.split(/\s+/);
+}
+console.log(splitNprint('QA Automation Engineer Practice Session'));
+function normalizeCase(text) {
+    return text.toLowerCase();
+}
+console.log(normalizeCase("Playwright Makes Testing EASY"));
+function wordLengths(text) {
+    let result = [];
+    let words = text.toLowerCase().split(/\s+/);
+    for (let word of words) {
+        result.push({ word: word, length: word.length });
+    }
+    return result;
+}
+console.log(wordLengths("Clash of Clans TH9 Progression"));
