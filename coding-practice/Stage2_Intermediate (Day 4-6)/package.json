@@ -9,11 +9,11 @@
   "license": "ISC",
   "author": "Vignesh",
   "type": "commonjs",
-  "main": "exercise-2026-10-08.js",
+  "main": "exercise-2026-10-09.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/exercise-2026-10-08.js",
-    "postbuild": "git add . && git commit -m 'Stage 2 auto-commit after build' && git push"
+    "start": "node dist/exercise-2026-10-09.js",
+    "postbuild": "git add . && git commit -m \"Stage 2 auto-commit after build\" && git push"
   },
   "devDependencies": {
     "typescript": "^7.0.2"
