@@ -1,5 +1,5 @@
 {
-  "name": "qa-playwright-sample",
+  "name": "playwright-ts-practice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bmvignesh/qa-playwright-sample.git"
+    "url": "git+https://github.com/bmvignesh/playwright-ts-practice.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/bmvignesh/qa-playwright-sample/issues"
+    "url": "https://github.com/bmvignesh/playwright-ts-practice/issues"
   },
-  "homepage": "https://github.com/bmvignesh/qa-playwright-sample#readme",
+  "homepage": "https://github.com/bmvignesh/playwright-ts-practice#readme",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
     "ts-node": "^10.9.2",

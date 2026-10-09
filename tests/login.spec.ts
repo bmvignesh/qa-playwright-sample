@@ -1,9 +1,12 @@
-import { test, expect } from '@playwright/test';
+import { test } from '../fixtures';
+import { expect } from '@playwright/test';
 
-test('Login flow works correctly', async ({ page }) => {
-  await page.goto('https://demo.playwright.dev/todomvc');
-  await page.fill('input.new-todo', 'QA Automation Task');
-  await page.press('input.new-todo', 'Enter');
-  const todoCount = await page.locator('.todo-count').textContent();
-  expect(todoCount).toContain('1 item left');
+test('Login test', async ({ page, loginPage }) => {
+  await page.goto('https://the-internet.herokuapp.com/login');
+
+  await loginPage.login('tomsmith', 'SuperSecretPassword!');
+
+  const flashMessage = page.locator('#flash');
+  await expect(flashMessage).toBeVisible({ timeout: 10000 });
+  await expect(flashMessage).toContainText('You logged into a secure area!');
 });
